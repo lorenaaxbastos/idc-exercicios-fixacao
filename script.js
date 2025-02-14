@@ -2,7 +2,7 @@ const accordions = document.querySelectorAll(".accordion-custom-4");
 
 const styleAnswers = function (answer, feedback) {
     const answerContent = feedback.firstElementChild;
-    if (answerContent && answerContent.textContent.startsWith("✅")) {
+    if (answerContent && answerContent.textContent.trim().startsWith("✅")) {
         answer.classList.add("correct");
         feedback.classList.add("correct");
     } else {
